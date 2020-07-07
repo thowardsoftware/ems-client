@@ -1,0 +1,24 @@
+<h2>Employee Details</h2> 
+<hr/>
+
+<div *ngIf="employee">
+  <div>
+    <label><b>First Name: </b></label> {{employee.firstName}}
+  </div>
+  <div>
+    <label><b>Last Name: </b></label> {{employee.lastName}}
+  </div>
+  <div>
+    <label><b>Job Title: </b></label> {{employee.title}}
+  </div>
+  <div>
+    <label><b>Department: </b></label> {{employee.department}}
+  </div>  
+  <div>
+    <label><b>Work Email: </b></label> {{employee.email}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="getEmployees()" class="btn btn-custom-edit">Back to Employee List</button><br>

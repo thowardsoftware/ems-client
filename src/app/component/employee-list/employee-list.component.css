@@ -1,0 +1,15 @@
+.btn-custom-edit {
+    background-color: rgb(49, 102, 172);
+    color: white;
+}
+
+.btn-custom-details {
+    background-color: rgb(148, 148, 148);
+    color: white;
+}
+
+.btn-custom-delete {
+    background-color: rgb(197, 56, 56);
+    color: white;
+}
+

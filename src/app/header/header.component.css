@@ -1,0 +1,13 @@
+/* Modify the backgorund color */ 
+.navbar-custom { 
+    background-color: rgb(49, 102, 172); 
+} 
+
+.navbar-brand {
+    color: white;
+    font-size: xx-large; 
+    font-style: oblique; 
+    font-weight: bold; 
+    opacity: 0.75;
+}
+

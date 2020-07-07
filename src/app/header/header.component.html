@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-custom navbar-dark fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/employees"
+      style="font-style: italic; font-size: xx-large; font-weight: bold;">EMS</a>
+    <button class="navbar-toggler" style="border-color: rgba(255, 255, 255, 0.747);" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto" style="margin-right: 10px;">
+        <li class="nav-item">
+          <a *ngIf="loginService.isUserLoggedIn()" routerLink="/" class="nav-link" routerLinkActive="active" style="color:aliceblue">View Employees</a>
+        </li>
+        <li class="nav-item">
+          <span sec:authorize="isAuthenticated()">
+            <a *ngIf="loginService.isUserLoggedIn()" routerLink="add" class="nav-link" routerLinkActive="active" style="color:aliceblue">Add Employee</a>
+          </span>
+        </li>
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0" >
+        <button *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="btn btn-outline-light my-2 my-sm-0">Login</button>
+        <button *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="btn btn-outline-light my-2 my-sm-0">Logout</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+
+
+
+

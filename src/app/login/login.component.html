@@ -1,0 +1,36 @@
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center" style="font-size: 25px">Admin Login</h5>
+            <hr>
+            <br>
+            <form class="form-signin" ngNativeValidate>
+            
+              <div class="form-label-group">
+                <label for="name" style="font-weight: bold;">Username</label>
+                <input type="text" class="form-control" name="username" required [(ngModel)]="username" placeholder="username">
+              </div>
+              <br>
+          
+              <div class="form-label-group">
+                <label for="name" style="font-weight: bold;">Password</label>
+                <input type="password" class="form-control" name="password" required [(ngModel)]="password" placeholder="password">
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <br>
+              </div>
+
+              <button (click)=checkLogin() class="btn btn-lg btn-custom btn-block text-uppercase">Login</button>
+      
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
